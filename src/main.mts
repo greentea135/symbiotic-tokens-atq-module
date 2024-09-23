@@ -148,7 +148,7 @@ function transformPoolsToTags(chainId: string, pools: Pool[]): ContractTag[] {
   }
 
   return validPools.map((pool) => {
-    const maxNameLength = 45;
+    const maxNameLength = 44;
     const truncatedNameText = truncateString(pool.outputToken.symbol, maxNameLength);
 
     return {
